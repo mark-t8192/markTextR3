@@ -1,2 +1,14 @@
+name: actionTest
+
 on:
   workflow_dispatch
+
+jobs:
+  echo:
+    name: Echo:
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      run:
+        echo "Hello world"
